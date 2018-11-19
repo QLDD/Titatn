@@ -7,7 +7,11 @@ function createWindow() {
         height: 600
     });
 
-    win.loadFile('index.html'); // loadUrl
+    // win.loadFile('index.html'); // loadUrl
+    
+    win.loadURL(`file://${__dirname}/src/index.html`);
+
+    // win.loadURL(`file://${__dirname}/dist/index.html`);
 }
 
 app.on('ready', createWindow);
