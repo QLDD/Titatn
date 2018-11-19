@@ -1,0 +1,14 @@
+# vscode
+.vscode/
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# Dependency directories
+node_modules/
+
+#
+package-lock.json
+
+# gulp build output
+dist/
