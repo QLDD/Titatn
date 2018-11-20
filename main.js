@@ -1,4 +1,4 @@
-const { app, BrowserWindow} = require('electron');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 
 function createWindow() {
 
@@ -12,6 +12,12 @@ function createWindow() {
     win.loadURL(`file://${__dirname}/src/index.html`);
 
     // win.loadURL(`file://${__dirname}/dist/index.html`);
+
+    globalShortcut.register('CommandOrControl+Shift+D', () => {
+        if (win) {
+            win.webContents.openDevTools();
+        }
+    });
 }
 
 app.on('ready', createWindow);
