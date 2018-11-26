@@ -1,8 +1,7 @@
 ### Titatn
 
 - electron
-- gulp
-- bower
+- webpack
 - vue
 
 
